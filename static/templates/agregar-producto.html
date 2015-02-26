@@ -5,10 +5,12 @@
 	<title>Document</title>
 </head>
 <body>
+	<div id="all">
 	<form role="form" action="" method="POST">
 	{% csrf_token %}
 		{{ form }}
 		<input type="submit">
 	</form>
+</div>
 </body>
 </html>
