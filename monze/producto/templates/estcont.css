@@ -1,0 +1,93 @@
+body
+{
+	margin: 0 auto;
+	background-image: url(Imagenes/fondo_cafe.jpg);
+	font-family: segoe ui;
+} 
+
+#all
+{
+	width: 960px;
+	margin: 0 auto;
+	padding: 0px;
+	box-shadow: #333 0px 0px 10px;
+	background-image: url(Imagenes/fvv.png);
+}
+
+#second
+{
+	padding: .6em;
+	margin-top: 450px;
+	width: 960px;
+	height: 250px;
+	background-image: url(Imagenes/prd.png);
+	margin-bottom: 50px;
+
+}
+
+nav
+{
+	margin: 0 auto;
+	background-color: #86B404;
+
+}
+
+
+nav ul li 
+{
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+
+	
+}
+
+nav ul li a 
+{
+	color: #f1f1f1;
+	text-decoration: none; 
+	padding: 1px 5px;
+	transition: all 0.52s linear;
+	-webkit- transition: all 0.5s linear;
+}
+
+nav ul li a:hover
+{
+	box-shadow: 0px 0px 10px yellow;
+	background-color: #D7DF01;
+}
+
+aside
+{
+	font-size: .5cm;
+	color: #000000;
+	font-weight: bold; 
+	float: right;
+}
+
+
+
+article
+{
+	text-align: justify;
+	padding: 10px;
+}
+
+.titulo
+{
+	font-size: 22px;
+	font-weight: 400;
+	position: static;
+	text-align: left;
+}
+
+footer
+{
+	background-color: #FA8258;
+	text-align: left;
+	padding: 10px 15px;
+	color: #f3f3f3;
+	margin-top: 0px;
+
+}
+
