@@ -8,6 +8,16 @@ from .models import Producto
 def index(request):
     return render(request,'index.html', {})
 
+def conocenos(request):
+    return render(request,'conocenos.html', {})
+
+def politicas(request):
+    return render(request,'politicas.html', {})
+
+def contacto(request):
+    return render(request,'contacto.html', {})
+
+
 def productos(request):
     print "hola"
     productos = Producto.objects.all()
