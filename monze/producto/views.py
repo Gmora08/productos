@@ -5,6 +5,9 @@ from django.contrib import messages
 from .forms import ProductoForm
 from .models import Producto
 
+def index(request):
+    return render(request,'index.html', {})
+
 def productos(request):
     print "hola"
     productos = Producto.objects.all()
@@ -45,3 +48,7 @@ class AgregarProducto(View):
             messages.error(request, u"ingresa mal algunos datos")
             return render(request, 'agregar-producto.html', {'form':form})
 
+def eliminarProducto(request, id_producto):
+        buscar = get_object_or_404(Producto, pk=id_producto)
+        buscar.delete()
+        return redirect(reverse('productos'))

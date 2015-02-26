@@ -12,6 +12,7 @@
 		<td>Precio</td>
 		<td>Cantidad</td>
 		<td>Editar</td>
+		<td>ELiminar</td>
 	</tr>
 	{% for p in productos %}
 	<tr>
@@ -19,6 +20,7 @@
 		<td> {{p.precio}} </td>
 		<td> {{p.cantidad}} </td>
 		<td><a href="{% url 'editar-producto' p.pk %}">editar</a></td>
+		<td><a href="{% url 'borrar-producto' p.pk %}">eliminar</a></td>
 
 	</tr>
 	{% endfor %}
